@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Pentaphone : Browser-based music performance tool">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Pentaphone</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/billgathen/pentaphone">View on GitHub</a>
+
+          <h1 id="project_title">Pentaphone</h1>
+          <h2 id="project_tagline">Browser-based music performance tool</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/billgathen/pentaphone/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/billgathen/pentaphone/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="pentaphone" class="anchor" href="#pentaphone" aria-hidden="true"><span class="octicon octicon-link"></span></a>pentaphone</h1>
+
+<p>In-browser music performance tool using React.js and the Web Audio API.</p>
+
+<blockquote>
+<p><strong>NOTE</strong> The behavior below is how the Pentaphone <em>will</em> work. It is very early alpha. These notes are to guide my development and keep my eyes on the prize.</p>
+</blockquote>
+
+<h2>
+<a id="what-is-a-pentaphone-how-do-i-play-one" class="anchor" href="#what-is-a-pentaphone-how-do-i-play-one" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is a Pentaphone? How do I play one?</h2>
+
+<p>The pentatonic scale (the first, second, third, fifth and sixth notes of a scale) always sound good with their associated chord.</p>
+
+<p>The three primary chord in diatonic (Western) harmony are the ones based on the first, fourth and fifth notes of the key.</p>
+
+<p>The pentaphone puts those five notes in your right hand (spacebar = 1, j = 2, k = 3, l = 5, ; = 6) and those three chords in your left (a = I, s = IV, d = V).</p>
+
+<p>When you play one of the LH chords, the notes played by the RH keys shift to the notes that match that chord.</p>
+
+<p>This means you can play any chord with your LH, then play any notes in the right hand any it will always sound good! Instant musical genius!</p>
+
+<h2>
+<a id="to-do" class="anchor" href="#to-do" aria-hidden="true"><span class="octicon octicon-link"></span></a>To Do</h2>
+
+<ul>
+<li>DONE Skeletal index.html with React components</li>
+<li>DONE Setup NPM</li>
+<li>Create GH page to play on</li>
+<li>Build process compiles JSX into dir for GH page</li>
+<li>Element that changes state based on key being pressed</li>
+<li>Play note based on state</li>
+<li>The pentatonic scale combined with I, IV, V chords</li>
+<li>LH plays the "shifters" (ctrl, alt, cmd? q, a, z? a, s, d?) which plays each of the chords (open, closed or root notes) and adjusts the pentatonic to match the chord</li>
+<li>RH plays the notes: spacebar, j, k, l, ; which are the I, II, III, V and VI</li>
+<li>Select waveform for tone</li>
+<li>Visual elements on the page trigger by the playing: shifter changes palette, notes splash complementary colors across screen</li>
+<li>Select palette for visuals</li>
+<li>Pressing a shifter changes the pentatonic, which stays there until shifted again, but stops playing the chord when you lift off the key, allowing chords rhythms</li>
+<li>Rhythm section: drums and bass</li>
+<li>Select the key signature (bass adjusts)</li>
+<li>Add basic effects, ADSR, etc</li>
+<li>Number keys trigger rhythms, allowing shifts within songs</li>
+<li>Rhythms trigger visuals, too</li>
+<li>Choose I, IV, V or vi, ii, iii (with associated pentatonic)</li>
+<li>Instructions show on page, but can be toggled on/off: effects happen behind</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Pentaphone maintained by <a href="https://github.com/billgathen">billgathen</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-35850569-2");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
